@@ -1,0 +1,480 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tiny5&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Kanit", sans-serif;
+}
+
+.noMargin {
+    margin: 0 !important;
+}
+
+.noPadding{
+    padding:0;
+}
+
+.noHeight{
+    height: auto !important;
+}
+
+.nav {
+    background-color: #ce2010;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0px !important;
+    left: 0px;
+}
+
+.nav_title{
+    font-size: 20px;
+    font-weight: 400;
+    color: #e2e2e2;
+}
+
+.nav_links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_sesion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_link{
+    padding: 5px 10px;
+    color: #e2e2e2;
+    text-decoration:none;
+}
+
+.nav_svg {
+    width: 20px;
+    height:20px;
+}
+
+.svg{
+    width:100%;
+    height:100%;
+    color: #e2e2e2;
+}
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: radial-gradient(circle, rgba(212,212,212,0.8547794117647058) 0%, rgba(214,214,214,0.7651435574229692) 40%, rgba(255,255,255,1) 99%);
+}
+
+.main_container{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 85%;
+    margin-top:90px;
+    margin-bottom: 120px;
+}
+
+.main_container_2{
+    width: 80%;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    background-color: #c7c7c7;
+}
+
+.footerNav {
+    border-top: 1px solid #cbc8c8;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: 400;
+}
+
+.input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: #e2e2e2;
+    font-family: "Kanit", sans-serif;
+}
+
+.input:focus {
+    outline: none; 
+}
+
+.btn {
+    padding: 10px;
+    width: 100%;
+    background-color: #ce2010;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: "Kanit", sans-serif;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.img_nav{
+    width: 5%;
+}
+
+.img_logo {
+    width: 70%;
+}
+
+.img{
+    width: 20%;
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.btnGestion {
+    border-radius: 5px;
+    padding: 60px 100px;
+    width: auto;
+    font-size: 20px;
+}
+
+.titulo {
+    font-size: 35px;
+    font-weight: 200;
+    margin-bottom:40px;
+}
+
+.cartel{
+    font-size: 35px;
+    font-weight: 200;
+}
+
+.volver {
+    padding-top: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ce2010;
+    border-bottom: 1px solid #ce2010;
+}
+
+th {
+    
+    padding: 5px 10px;
+}
+
+td {
+    padding: 5px 10px;
+}
+
+.labelGV{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+tr:last-child td table {
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.modal_container {
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, rgba(212,212,212,0.8547794117647058) 0%, rgba(214,214,214,0.7651435574229692) 40%, rgba(255,255,255,1) 99%);
+}
+
+.modal_content{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
+    padding: 30px 50px;
+    background-color: #e2e2e2;
+    border-radius: 5px;
+}
+
+.modal_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_title {
+    font-weight: 800;
+    color: #000;
+}
+
+.modal_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    margin-top: 20px;
+}
+
+.modal_button {
+    padding: 8px 12px;
+    color: #000;
+    margin: 0 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.btnCerrar{
+    background-color: #ce2010;
+    color: #e2e2e2;
+}
+
+.turnos_content{
+    width: 30%;
+}
+
+.turnos_select{
+    width: 100%;
+    padding:4px;
+    margin: 10px 0;
+}
+
+.busqueda_container{
+    display:flex;
+    justify-content:space-between;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.btnBuscar{
+    padding: 8px 12px;
+    background-color:#ce2010;
+    color: #e2e2e2;
+    border:none;
+}
+
+.btnAgregar {
+    padding: 8px 12px;
+    margin: 20px 0 8px 0;
+    color: #e2e2e2;
+    background-color: #ce2010;
+    border: none;
+    cursor: pointer;
+}
+
+/* FORMULARIO PACIENTES */
+
+.form_container {
+    z-index: 999;
+    visibility: visible;
+    position: absolute;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, rgba(212,212,212,0.8547794117647058) 0%, rgba(214,214,214,0.7651435574229692) 40%, rgba(255,255,255,1) 99%);
+}
+
+.form_container2 {
+    z-index: 999;
+    visibility: visible;
+    position: absolute;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, rgba(212,212,212,0.8547794117647058) 0%, rgba(214,214,214,0.7651435574229692) 40%, rgba(255,255,255,1) 99%);
+}
+
+.form_content{
+    width: 600px;
+    background-color: #e2e2e2;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.form_header{
+    text-align:center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.form_texts{
+    margin: 20px 0;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.form_textsGroup{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+}
+
+.form_textsGroupDias {
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+}
+
+.form_campos{
+    width: 160px;
+    padding: 4px;
+    border:none;
+}
+
+.form_campos:focus{
+    outline:none;
+    background-color: #d1d1d1;
+}
+
+.form_buttons{
+    text-align:center;
+}
+
+.lbConfirmacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    color: red;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* INFORMES */
+
+.titulo_informes_modif{
+    margin: 50px 0;
+}
+
+.informes_container {
+    width: auto;
+    height: 400px;
+}
+
+.barras_main{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+
+.barras_porcentaje {
+    margin: 10px 0;
+    margin-right: 5px;
+    padding-right: 5px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    height: calc(400px - 45px);
+    border-right: 1px solid #cbc8c8;
+}
+
+.barras_container {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    align-items: flex-end;
+    height: 400px;
+}
+
+.barras_group{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+}
+
+.barras {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.barra {
+    width: 60px; 
+    background-color: #4CAF50; 
+    text-align: center;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.alter {
+    background-color: #fe3e00 !important;
+}
+
+.opciones_container{
+    margin: 10px 0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    column-gap: 10px;
+    margin: 10px 0;
+}
+
+.opcion_text{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.barras_indicador{
+    display:flex;
+    justify-content:center;
+    column-gap:10px;
+    margin:20px 0;
+}
+
+.circulo {
+    background-color: #4CAF50;
+    height:20px;
+    width:20px;
+    border-radius:50%;
+}
+#ScriptManager1 {
+    visibility: hidden;
+}
+
+.mensajeError{
+    text-align:center;
+    padding:15px 0;
+    color:red;
+    font-size:15px;
+}
